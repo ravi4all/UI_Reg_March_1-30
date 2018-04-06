@@ -1,0 +1,30 @@
+/* Parallax Effect */
+body {
+    background-image: url("http://st3.cricketcountry.com/wp-content/uploads/2016/03/Indias-captain-Mahendra-Singh-Dhoni-makes-field-placement-during-the-first-T20-international-match-between-India-and-Sri-Lanka.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 550px;
+    margin-bottom: 350px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#div_1 {
+    background-image: url("https://images.news18.com/ibnlive/uploads/761x506/jpg/2017/09/dhoni.jpg");
+}
+#div_2 {
+    background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201701/msdhoni_fbsport-647_010517082228.jpg");
+}
+#div_3 {
+    background-image: url("https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/03/16/Pictures/cricket-rsa-ind-t20_d3e78cd0-2924-11e8-a8dd-98cd3615fcfa.jpg");
+}
+#div_4 {
+    background-image: url("https://ik.imagekit.io/newsbytes/images/116_4281520602255.jpg?z=l");
+}
+#div_5 {
+    background-image: url("http://www.thehindu.com/news/national/article22461760.ece/alternates/FREE_660/18INNSMVIRATPTI1232017000008A");
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent > p {
+            color: red;
+        }
+        #parent + h2 {
+            color: red;
+        }
+        #parent ~ h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Siblings + Combinators</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maiores ea voluptatem sit dolor perspiciatis! Dolorum asperiores incidunt, enim hic officia maiores blanditiis voluptates commodi id quaerat soluta consequatur laboriosam!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maiores ea voluptatem sit dolor perspiciatis! Dolorum asperiores incidunt, enim hic officia maiores blanditiis voluptates commodi id quaerat soluta consequatur laboriosam!
+        </p>
+        <div class="child">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus veniam eius tempore porro ipsa reiciendis officiis dolorum suscipit perferendis inventore laudantium, molestias vel, beatae quos aut quasi deserunt. Officiis, ipsam.
+            </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore dolores velit. Illo, natus possimus odit numquam debitis dolor sint similique accusantium, ullam molestiae facere error delectus eius rerum! Facere!
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+    
+</body>
+</html>
