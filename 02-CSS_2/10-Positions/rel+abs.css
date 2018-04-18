@@ -1,0 +1,24 @@
+div {
+    border: 5px solid red;
+    padding: 100px;
+}
+
+img {
+    position: absolute;
+    /* right: 0px;
+    bottom: 0px; */
+    top: 0px;
+    left: 0px;
+}
+
+/* #parent {
+    position: relative;
+} */
+
+/* .child {
+    position: relative;
+} */
+
+.grandchild {
+    position: relative;
+}
