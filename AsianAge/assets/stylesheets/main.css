@@ -97,3 +97,115 @@ ul {
 #main-navigation ul li a:hover {
     background-color: #CF0000;
 }
+
+
+#content {
+    padding: 0px 10px;
+}
+
+#top_stories .stories{
+    padding: 30px 0px;
+    width: 75%;
+}
+#top_stories .stories h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #CF0000;
+}
+#top_stories .stories h2 a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 10px 4px;
+    background-color: #CF0000;
+}
+#top_stories .main_story {
+    background-color: #202021;
+    padding: 15px 10px;
+}
+#top_stories .main_story img {
+    width: 100%;
+}
+#top_stories .stories .main_image {
+    width: 65%;
+    padding: 2px 15px;
+    background-color: #0A0A0A;
+}
+#top_stories h1 {
+    font-size: 24px;
+}
+#top_stories h1 a{
+    color: #fff;
+}
+#top_stories h1 a:hover{
+    color: #bb0000;
+}
+#top_stories .stories .recent_news {
+    width: 30%;
+}
+
+#top_stories .recent_news li .recent_image {
+    float: left;
+    width: 46%;
+}
+#top_stories .recent_news li .recent_text {
+    float: left;
+    width: 47%;
+}
+#top_stories .recent_text {
+    margin-left: 15px;
+}
+#top_stories .recent_text h3 {
+    font-size: 14px;
+}
+#top_stories .recent_text a {
+    color: #808080;
+}
+#top_stories .recent_text a:hover {
+    color: #fff;
+}
+
+#top_stories .most_popular {
+    width: 20%;
+    padding-top: 60px;
+    margin-left: 20px;
+}
+#top_stories .most_popular h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 3px solid #cc0000;
+}
+#top_stories .most_popular li span, #top_stories .most_popular li h3{
+    display: inline-block;
+}
+#top_stories .most_popular li span {
+    font-size: 50px;
+    color: #cc0000;
+    font-weight: bold;
+    width: 20%;
+    height: 50px;
+    vertical-align: middle;
+}
+#top_stories .most_popular li h3{
+    width: 75%;
+    font-size: 16px;
+    vertical-align: middle;
+}
+#top_stories .most_popular li h3 a {
+    color: #000;
+}
+
+
+#top_stories .headlines li {
+    display: inline-block;
+    width: 49%;
+}
+#top_stories .headlines img {
+    width: 100%;
+}
+#top_stories .headlines .image,#top_stories .headlines .text {
+    width: 48%;
+}
+#top_stories .headlines .text {
+    font-size: 18px;
+    font-weight: bold;
+}
