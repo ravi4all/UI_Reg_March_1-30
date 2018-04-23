@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" placeholder="Enter Email" autofocus autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="30">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="week">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Mobile Num</td>
+                <td>
+                    <input type="text" placeholder="Enter Mobile Num" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" max="5000" min="1000" value="2000" step="500"
+                    onchange="output.value = value">
+                </td>
+                <td>
+                    <output id="output">0</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter Card Number" pattern="[a-z]{4}[0-9]{2}[A-Z]{1}[@]" title="Enter 4 small case, 2 Numbers, 1 Uppercase, @">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose File</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Message</td>
+                <td>
+                    <textarea cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

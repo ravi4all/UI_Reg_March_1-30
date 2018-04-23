@@ -1,0 +1,29 @@
+HTML 4 vs HTML 5
+
+HTML 5 => Adobe Flash
+Basic
+Form Validations
+Audio/Video
+
+Advance - HTML 5 => Javascript
+Offline webpage => Cache
+Localstorage
+Canvas and SVG (Scalable Vector Graphics)
+Notifications
+Geolocation
+Drag and Drop
+
+
+
+
+
+
+
+
+
+
+
+CSS 3
+Flexbox
+Media Queries
+Animation
