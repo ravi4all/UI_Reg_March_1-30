@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            border: 10px solid red;
+            /* border-radius: 50px; */
+            /* border-top-left-radius: 200px; */
+            /* border-top-right-radius: 50px; */
+            /* border-bottom-right-radius: 200px; */
+            /* border-bottom-left-radius: 50px; */
+            /* border-radius: 200px 50px 200px 50px; */
+            border-radius: 50%;
+            position: relative;
+        }
+        .eye {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 20%;
+        }
+        .left-eye {
+            left: 25%;
+        }
+        .right-eye {
+            right: 25%;
+        }
+        .lips {
+            position: absolute;
+            bottom: 20%;
+            left: 12%;
+            height: 200px;
+            width: 200px;
+            border: 10px solid red;
+            border-color: transparent transparent red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rounded Corners</h1>
+
+    <div>
+        <span class="left-eye eye"></span>
+        <span class="right-eye eye"></span>
+        <span class="lips"></span>
+    </div>
+    
+</body>
+</html>
