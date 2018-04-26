@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#container {
+    height: 600px;
+    transform: scale(2,2);
+    transition-duration: 20s;
+    background-size: 100% 100%;
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/xCCDBUa/blue-planet-earth-rotation-with-space-background-4k-animation_ed3hfc3cl__F0000.png");
+}
+
+#image_1 {
+    height: 100px;
+    width: 300px;    
+    left: 40%;
+    top: 20%;
+    transform: scale(0.01,0.01) rotate(0deg);
+    position: absolute;
+    background-image: url("https://orig00.deviantart.net/3fff/f/2014/100/c/7/iron_man_2008_flying_1_by_ent2pri9se-d7dxfkf.png");
+    background-size: 100% 100%;
+    transition-duration: 20s;
+}
+
+#image_2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    width: 300px;
+    transform: rotate(200deg) translate(100%);
+    background-size: 100% 100%;
+    transition-delay: 18s;
+    transition-duration: 5s;
+    background-image: url("http://cliparts.co/cliparts/6cy/5pX/6cy5pXyri.png");
+}
+
+#image_3 {
+    height: 700px;
+    width: 700px;
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: 22s;
+    top: 0%;
+    left: 30%;
+    background-image: url("http://bestanimations.com/Military/Explosions/explosion-animation-1.gif");
+}
+
+#container:hover {
+    transform: scale(1,1);
+}
+#container:hover + #wrapper #image_1 {
+    transform: scale(2,2) rotateZ(720deg);
+}
+#container:hover + #wrapper #image_2 {
+    transform: rotate(200deg) translate(-100%);
+}
+#container:hover ~ #image_3 {
+    opacity: 1;
+}
+
+#wrapper {
+    transition-delay: 22s;
+    opacity: 1;
+}
+#container:hover + #wrapper {
+    opacity: 0;
+}
