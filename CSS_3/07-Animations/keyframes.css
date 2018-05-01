@@ -1,0 +1,22 @@
+div {
+    border: 2px solid red;
+}
+
+img {
+    animation: anim_1 10s infinite;
+}
+
+@keyframes anim_1 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    50% {
+        transform: translate(800px, 0px);
+    }
+    51% {
+        transform: translate(800px,0px) rotateY(180deg);
+    }
+    100% {
+        transform: translate(0px,0px) rotateY(180deg);
+    }
+}

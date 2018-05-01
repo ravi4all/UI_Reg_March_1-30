@@ -1,0 +1,52 @@
+div {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    background-color: red;
+    width: 50px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: waves 1s infinite;
+}
+#div_1 {
+    animation-timing-function: ease;
+}
+#div_2 {
+    animation-timing-function: ease-in;
+    left: 6%;
+}
+#div_3 {
+    animation-timing-function: ease-in-out;
+    left: 12%;
+}
+#div_4 {
+    animation-timing-function: ease-out;
+    left: 18%;
+}
+#div_5 {
+    animation-timing-function: linear;
+    left: 24%;
+}
+#div_6 {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    left: 30%;
+}
+#div_7 {
+    animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    left: 36%;
+}
+#div_8 {
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    left: 42%;
+}
+
+@keyframes waves {
+    0% {
+        height: 100px;
+    }
+    50% {
+        height: 500px;
+    }
+    100% {
+        height: 50px;
+    }
+}
