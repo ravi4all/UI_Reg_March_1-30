@@ -1,0 +1,53 @@
+#container {
+    border: 2px solid red;
+}
+
+.row {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    align-items: stretch;
+}
+
+.col {
+    border: 2px solid blue;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+/* 
+    by default => 100% = 33.333333% 
+*/
+
+.col-1 {
+    width: 20%;
+}
+.col-2 {
+    width: 40%;
+}
+.col-3 {
+    width: 20%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    height: 200px;
+    /* width: 200px; */
+    width: 30%;
+    background-color: lightblue;
+    border: 2px solid red;
+    margin: 0px 10px 20px;
+}
