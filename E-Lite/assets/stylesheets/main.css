@@ -1,0 +1,149 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Global Settings */
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+#topbar {
+    background-color: #000;
+}
+#topbar ul li {
+    font-size: 14px;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 8px 0px;
+    border-right: 1px solid #464444;
+}
+#topbar ul li i {
+    color: #2fdab8;
+    margin-right: 12px;
+}
+#topbar ul li span {
+    color: #fff;
+}
+
+/* Header */
+#header {
+    padding: 15px 0px;
+}
+#header .col-1 {
+    padding-top: 10px;
+    width: 35%;
+}
+#header .col-2 {
+    width: 25%;
+}
+#header .col-3 {
+    width: 30%;
+    padding-top: 20px;
+}
+#header .row {
+    justify-content: space-between;
+}
+
+#header .search input[type="text"]{
+    border: 1px solid #ddd;
+    color: #848484;
+    padding: 15px 10px;
+    width: 80%;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+#header .search input[type="submit"] {
+    display: inline-block;
+    height: 47px;
+    width: 13%;
+    vertical-align: middle;
+    border: 1px solid #2fdab8;
+    background: #2fdab8 url("../images/search.png") no-repeat center center/100% 100%;
+}
+
+#header .logo h1 a{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #000;
+}
+#header .logo span {
+    display: inline-block;
+    color: #fff;
+    padding: 8px 15px;
+    background-color: #000;
+    font-weight: bold;
+}
+
+#header .sociable ul li {
+    display: inline-block;
+}
+#header .sociable ul li:not(.share) {
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    text-align: center;
+    background-color: red;
+    font-size: 14px;
+    margin: 0px 5px;
+}
+#header .sociable span {
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+#header .sociable ul li a {
+    color: #fff;
+}
+
+#header .sociable ul li.fb {
+    margin-left: 15px;
+    background-color: #3B5998;
+}
+#header .sociable ul li.tw {
+    background-color: #1DA1F2;
+}
+#header .sociable ul li.yt {
+    background-color: #bb0000;
+}
+#header .sociable ul li.link {
+    background-color: #0077B5;
+}
