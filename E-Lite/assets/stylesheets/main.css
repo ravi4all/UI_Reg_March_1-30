@@ -45,6 +45,18 @@ ul {
     margin: 0 auto;
 }
 
+@media(max-width:1200px){
+    .container {
+        width: 1000px;
+    }
+}
+
+@media(max-width:992px){
+    .container {
+        width: 100%;
+    }
+}
+
 .wrapper {
     position: absolute;
     width: 100%;
@@ -83,6 +95,18 @@ ul {
 }
 #topbar ul li span {
     color: #fff;
+}
+
+@media(max-width: 768px){
+    #topbar {
+        display: none;
+    }
+    #topbar ul li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
 }
 
 /* Header */
@@ -169,6 +193,70 @@ ul {
     background-color: #0077B5;
 }
 
+@media(max-width: 1200px){
+    #header .row {
+        /* justify-content: center; */
+    }
+    #header .col-1 {
+        width: 30%;
+    }
+    #header .col-2 {
+        width: 30%;
+    }
+    #header .col-3 {
+        width: 30%;
+    }
+}
+@media(max-width:992px){
+    #header  {
+        padding: 0px 15px;
+    }
+    #header .row {
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    #header .col-1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #header .col-2 {
+        width: 40%;
+    }
+    #header .col-3 {
+        width: 40%;
+    }
+    #header .logo h1 {
+        font-size: 25px;
+    }
+    #header .search input[type="text"]{ 
+        width: 90%;
+    }
+    #header .search input[type="submit"] {
+        width: 6%;
+    }
+    #header .sociable ul {
+        text-align: right;
+    }
+}
+
+@media(max-width:768px){
+    .row {
+        display: block;
+    }
+    #header .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #header .search input[type="text"]{ 
+        width: 75%;
+    }
+    #header .search input[type="submit"] {
+        width: 60px;
+    }
+}
+
+
 
 #main-navigation {
     background-color: #000;
@@ -223,6 +311,30 @@ ul {
     color: #000;
     background-color: #17C3A2;
     padding: 8px 12px;
+}
+
+@media(max-width:1200px){
+    #navigation ul li a{
+        padding: 25px 10px;
+    }
+    #cart {
+        min-width: 150px;
+    }
+}
+
+@media(max-width:992px){
+    #main-navigation .row {
+        justify-content: center;
+    }
+    #navigation ul li {
+         margin: 0px;
+    }
+    #navigation ul li a{
+        letter-spacing: 1px;
+    }
+    #cart {
+        min-width: 100px;
+    }
 }
 
 #banner {
