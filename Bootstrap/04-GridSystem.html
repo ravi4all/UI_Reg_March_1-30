@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .red, .green,.yellow {
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grid System</h1>
+
+    <!-- 1. Always use a container/container-fluid.
+    2. Rows must be placed within containers.
+    3. Only Columns will become the child of a row.
+    4. Content will be placed within columns.
+ -->
+
+    <div class="container">
+        <section id="section_1">
+            <div class="row">
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="green"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_2">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="red"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="green">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="yellow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="red"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+</html>
