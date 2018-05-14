@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>KeyEvents</h1>
+
+    <!-- KeyDown
+    KeyPress
+    KeyUp -->
+
+    <!-- <input type="text" placeholder="Enter Something" onkeypress="exec_event(this)"> -->
+
+    <!-- <input type="text" placeholder="Enter Something" onkeydown="exec_event(this)"> -->
+
+    <!-- <input type="text" placeholder="Enter Something" onkeyup="exec_event(this)"> -->
+
+    <input type="text" placeholder="Enter Something" onkeyup="exec_event()">
+    <span id="result"></span>
+    
+    <script>
+        function exec_event(){
+            // alert("KeyPress Event fired");
+            key = event.keyCode;
+            console.log(key);
+            // document.getElementById("result").innerHTML = obj.value;
+        }
+    </script>
+</body>
+</html>

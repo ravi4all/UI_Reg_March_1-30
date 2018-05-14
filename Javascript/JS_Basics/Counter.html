@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Counter</h1>
+    <img src="../../images/images/download (1).jpg" alt="">
+    <p>Likes : <span id="likes">0</span></p>
+    <button onclick="like()">Like</button>
+    <button onclick="unlike()">Unlike</button>
+    
+    <script>
+        var counter = 0;
+        var span = document.getElementById("likes");
+        function like(){
+            counter++;
+            span.innerHTML = counter;
+        }
+        function unlike(){
+            counter--;
+            span.innerHTML = counter;
+        }
+    </script>
+</body>
+</html>
