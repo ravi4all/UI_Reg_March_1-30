@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX Call</h1>
+
+    <button onclick="execute()">Click Here</button>
+
+    <script>
+            function execute(){
+                one()
+                two()
+                three()
+                four()
+                five()
+            }
+            function one(){
+                console.log("Function One");
+            }
+            function two(){
+                console.log("Function Two");
+            }
+            // function three(){
+            //     console.log("Function Three");
+            //     for(var i = 0; i < 100000; i++){
+            //         for(var j = 0; j < 100000; j++){
+            //             k = i + j;
+            //         }
+            //     }
+            //     console.log("Iterations Completed");
+            // }
+            function three(){
+                console.log("Function three");
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function(){
+                    // console.log("Ready state is",this.readyState);
+                    // console.log("Status is",this.status);
+                    if(this.readyState == 4 && this.status == 200){
+                        for(var i = 0; i < 100000; i++){
+                            for(var j = 0; j < 100000; j++){
+                                k = i + j;
+                            }
+                        }
+                        console.log("Iterations Completed");
+                    }
+                }
+                xhttp.open('get', '');
+                xhttp.send();
+            }
+            function four(){
+                console.log("Function Four");
+            }
+            function five(){
+                console.log("Function Five");
+            }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+var obj = {
+	"id" : 1,
+	"name" : "Ram",
+	"age" : 21
+}
+undefined
+obj instanceof Object
+true
+obj.name
+"Ram"
+obj.college = 'IP'
+"IP"
+obj
+{id: 1, name: "Ram", age: 21, college: "IP"}
+function Song(song_id,song_name,song_url){
+	this.id = song_id;
+	this.name = song_name;
+	this.url = song_url;
+}
+undefined
+var song_1 = new Song(1,'Baahubali','www.something.com/baahubali.mp3');
+undefined
+song_1
+Song {id: 1, name: "Baahubali", url: "www.something.com/baahubali.mp3"}
+song_1.name
+"Baahubali"
+var song_2 = new Song(2,'Baahubali_2','www.something.com/baahubali_2.mp3');
+undefined
+song_2
+Song {id: 2, name: "Baahubali_2", url: "www.something.com/baahubali_2.mp3"}
+function Song(song_id,song_name,song_url){
+	this.id = song_id;
+	this.name = song_name;
+	this.url = song_url;
+	this.movie = 'Baahubali';
+}
+undefined
+song_1 instanceof Song
+false
+var song_1 = new Song(1,'Baahubali','www.something.com/baahubali.mp3');
+undefined
+var song_2 = new Song(2,'Baahubali_2','www.something.com/baahubali_2.mp3');
+undefined
+song_1
+Song {id: 1, name: "Baahubali", url: "www.something.com/baahubali.mp3", movie: "Baahubali"}id: 1movie: "Baahubali"name: "Baahubali"url: "www.something.com/baahubali.mp3"__proto__: Object
+Song.prototype.selected = false;
+false
+song_1
+Song {id: 1, name: "Baahubali", url: "www.something.com/baahubali.mp3", movie: "Baahubali"}id: 1movie: "Baahubali"name: "Baahubali"url: "www.something.com/baahubali.mp3"__proto__: Objectselected: falseconstructor: ƒ Song(song_id,song_name,song_url)__proto__: Object
+var obj = {
+	"id" : 1,
+	"name" : 'Ram',
+	"age" : 21,
+	bio:  function(){
+		console.log("Bio function called");
+	}
+}
+undefined
+obj.bio()
+VM267:6 Bio function called
+undefined
+var obj = {
+	"id" : 1,
+	"name" : 'Ram',
+	"age" : 21,
+	bio:  function(){
+		console.log("Name is",name);
+	}
+}
+undefined
+obj.bio()
+VM279:6 Name is 
+undefined
+var obj = {
+	"id" : 1,
+	"name" : 'Ram',
+	"age" : 21,
+	bio:  function(){
+		console.log("Name is",this.name);
+	}
+}
+undefined
+obj.bio()
+VM291:6 Name is Ram
+undefined
+var obj = {
+	"id" : 1,
+	"name" : 'Ram',
+	"age" : 21,
+	bio:  function(){
+		function show_name(){
+			console.log("Name is",this.name);
+		}
+	}
+}
+undefined
+obj.bio()
+undefined
+var obj = {
+	"id" : 1,
+	"name" : 'Ram',
+	"age" : 21,
+	bio:  function(){
+		function show_name(){
+			console.log("Name is",this.name);
+		}
+		show_name()
+	}
+}
+undefined
+obj.bio()
+VM316:7 Name is 
+undefined
+var obj = {
+	"id" : 1,
+	"name" : 'Ram',
+	"age" : 21,
+	bio:  function(){
+		var that = this;
+		function show_name(){
+			console.log("Name is",that.name);
+		}
+		show_name()
+	}
+}
+undefined
+obj.bio()
+VM329:8 Name is Ram
+undefined
