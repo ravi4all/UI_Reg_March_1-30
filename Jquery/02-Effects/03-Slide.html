@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #content {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Slide Effect</h1>
+
+    <button id="slideUp">SlideUp</button>
+    <button id="slideDown">SlideDown</button>
+    <button id="toggle">Toggle</button>
+    <br><br>
+    <div id="content">
+        <h2>This is a heading</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur veritatis maiores culpa deserunt saepe numquam provident perspiciatis quo explicabo dicta. Doloremque saepe praesentium odio voluptatibus, quos tempore sapiente veritatis nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam modi sint blanditiis, fuga ad impedit veritatis unde quam velit. Perspiciatis eaque eveniet nostrum blanditiis et molestias. Sunt impedit corporis aperiam?
+        </p>
+    </div>
+    
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $("#slideUp").click(function(){
+            $("#content").slideUp(1000);
+        });
+        $("#slideDown").click(function(){
+            $("#content").slideDown(1000);
+        });
+        $("#toggle").click(function(){
+            $("#content").slideToggle(1000);
+        });
+    </script>
+</body>
+</html>
